@@ -1,0 +1,15 @@
+services:
+  ftp-server:
+    image: the-mentor/ftp-server:latest
+    container_name: ftp-server
+    restart: unless-stopped
+    ports:
+      - '20-21:20-21/tcp'
+      - '40000-40009:40000-40009/tcp'
+    environment:
+      - FTP_PASS=IM_a_password_ChangeMe
+      - FTP_USER=IM_a_username_ChangeMe
+      - GUID=1000
+      - UID=1000
+    volumes:
+      - './FTPdata:/home'
