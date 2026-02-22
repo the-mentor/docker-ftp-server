@@ -1,6 +1,6 @@
-FROM alpine:3.23
+FROM dhi.io/alpine-base:3.23-alpine3.23-dev
 
-LABEL org.opencontainers.image.source=https://github.com/the-mentor/docker-ftp-server
+LABEL org.opencontainers.image.source = https://github.com/the-mentor/docker-ftp-server
 
 ENV FTP_USER=foo \
 	FTP_PASS=bar \
