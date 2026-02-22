@@ -1,4 +1,7 @@
 FROM alpine:3.23
+
+LABEL org.opencontainers.image.source=https://github.com/the-mentor/docker-ftp-server
+
 ENV FTP_USER=foo \
 	FTP_PASS=bar \
 	GID=1000 \
